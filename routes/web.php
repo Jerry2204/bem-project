@@ -66,4 +66,5 @@ Route::group(['middleware' => ['auth', 'CheckRole:kadep']], function () {
     Route::post('/proker/update/{id}', 'KadepController@update_proker');
     Route::get('/anggota/{id}/ubah', 'AnggotaController@edit');
     Route::post('/anggota/{id}/update', 'AnggotaController@update');
+    Route::get('/anggota/{id}/hapus', 'AnggotaController@delete');
 });

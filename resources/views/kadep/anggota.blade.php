@@ -47,7 +47,7 @@
                                 <td>+62{{ $agt->no_hp }}</td>
                                 <td>
                                     <a href="/anggota/{{ $agt->id }}/ubah" class="btn btn-sm btn-cyan">Ubah</a>
-                                    <a href="" class="btn btn-sm btn-danger">Hapus</a>
+                                    <a href="/anggota/{{ $agt->id }}/hapus" onclick="return confirm('Apakah anda yakin ingin menghapus {{ $agt->nama }} dari departemen?')" class="btn btn-sm btn-danger">Hapus</a>
                                 </td>
                             </tr>
                             @endforeach

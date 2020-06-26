@@ -61,4 +61,10 @@ class AnggotaController extends Controller
 
         return back()->with('sukses', 'Data Anggota Berhasil diubah');
     }
+
+    public function delete(Anggota $id)
+    {
+        $id->delete();
+        return back()->with('sukses', 'Data Anggota Berhasil di hapus');
+    }
 }
